@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F4F0E8;
+  --foreground: #14161A;
+
+  /* Custom Palette */
+  --navy: #0B1220;
+  --ivory: #F4F0E8;
+  --graphite: #14161A;
+  --bronze: #B08D57;
+}
+
+@theme {
+  --color-navy: var(--navy);
+  --color-ivory: var(--ivory);
+  --color-graphite: var(--graphite);
+  --color-bronze: var(--bronze);
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+
+  --animate-fade-in: fade-in 0.5s ease-out forwards;
+  --animate-slide-up: slide-up 0.7s ease-out forwards;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--navy);
+  color: var(--ivory);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+
+  /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
