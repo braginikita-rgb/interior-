@@ -1,11 +1,22 @@
 import { Container } from "@/components/ui/Container";
+import Image from "next/image";
 
 export const Footer = () => {
+
+
     return (
         <footer className="bg-navy text-white py-20 border-t border-white/10">
             <Container className="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div className="space-y-4">
-                    <h3 className="text-2xl font-serif font-bold tracking-widest">STUDIO</h3>
+                    <div className="relative h-48 w-[800px]">
+                        <Image
+                            src="/logo.png"
+                            alt="STUDIO"
+                            fill
+                            className="object-contain object-left"
+                            unoptimized
+                        />
+                    </div>
                     <p className="text-white/60 text-sm leading-relaxed">
                         Создаем пространства для жизни и бизнеса. Полный цикл работ: от идеи до новоселья.
                     </p>

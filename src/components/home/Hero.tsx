@@ -25,7 +25,7 @@ export const Hero = () => {
                     poster="https://images.unsplash.com/photo-1600596542815-3ad195bb4a77?auto=format&fit=crop&q=80&w=1200"
                     className="h-full w-full object-cover"
                 >
-                    <source src="/Generisanje_Premium_Enterijera_u_Pokretu.mp4" type="video/mp4" />
+                    <source src="/new-hero.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-navy/40" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/30" />
