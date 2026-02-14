@@ -127,16 +127,7 @@ export default async function ProjectPage({
                                 <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/10 transition-colors pointer-events-none" />
                             </div>
                         ))}
-                        {[56, 57].map((num, i) => (
-                            <div key={`extra-${i}`} className="relative aspect-[4/3] overflow-hidden rounded-sm group">
-                                <Image
-                                    src={`https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
-                                    alt="Detail"
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
-                            </div>
-                        ))}
+
                     </div>
                 </div>
             </Container>

@@ -27,7 +27,7 @@ export const PortfolioPreview = () => {
                 ref={ref}
                 className="pl-4 md:pl-[calc((100vw-1440px)/2+2rem)] flex gap-4 md:gap-8 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory pr-4 pb-12"
             >
-                {projects.map((project, i) => (
+                {projects.slice(0, 4).map((project, i) => (
                     <motion.div
                         key={project.slug}
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -40,6 +40,7 @@ export const PortfolioPreview = () => {
                                 src={project.cover}
                                 alt={project.title}
                                 fill
+                                sizes="(max-width: 768px) 85vw, (max-width: 1024px) 600px, 700px"
                                 className="object-cover transition-transform duration-1000 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-colors duration-500" />

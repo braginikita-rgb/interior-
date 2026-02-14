@@ -80,6 +80,7 @@ export default function PortfolioPage() {
                                         src={project.cover}
                                         alt={project.title}
                                         fill
+                                        sizes="(max-width: 768px) 100vw, 50vw"
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                     {/* Hover Reveal Image - Simulating before/after or just 2nd image */}
@@ -88,6 +89,7 @@ export default function PortfolioPage() {
                                             src={project.images[1]}
                                             alt={project.title}
                                             fill
+                                            sizes="(max-width: 768px) 100vw, 50vw"
                                             className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-700"
                                         />
                                     )}
